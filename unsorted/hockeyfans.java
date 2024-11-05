@@ -1,5 +1,5 @@
 package unsorted;
-
+//returned time limit exception
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.*;
@@ -25,10 +25,8 @@ public class hockeyfans {
         inputs = input.split(" ");
         Set<Integer> values = new TreeSet<>();
 
-        int maxChant = -1;
         for (int i = 0; i < n; i++) {
             chants[i] = Integer.parseInt(inputs[i]);
-            maxChant = Math.max(chants[i], maxChant);
             values.add(chants[i]);
         }
         List<Integer> valuesList = new ArrayList<>(values);
@@ -45,6 +43,10 @@ public class hockeyfans {
                     i += s;
                 } else {
                     i++; 
+                }
+                
+                if (count == m) {
+                    break;
                 }
             }
 

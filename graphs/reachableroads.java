@@ -1,4 +1,4 @@
-package graphs.reachableroads;
+package graphs;
 
 import java.util.ArrayList;
 import java.util.Scanner;
